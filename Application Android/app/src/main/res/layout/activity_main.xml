@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgPath"
+        android:gravity="center"
+        android:hint="chemin de l'image"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Select Image"
+        android:onClick="selectImage"
+        android:layout_marginRight="10dp"
+        android:textColor="#00f"/>
+    <Button
+    android:id="@+id/btn_capturer"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:text="capturer"
+        android:layout_marginLeft="10dp"
+    android:textColor="#00f" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect to Server"
+        android:textColor="#0f4"
+        android:onClick="connectServer"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#f00"
+        android:textSize="20dp"
+        android:text="Message from the Server ..."
+        android:id="@+id/responseText" />
+
+    <ImageView
+        android:id="@+id/imageCapture"
+        android:layout_width="match_parent"
+        android:layout_height="400dp" />
+
+
+
+
+</LinearLayout>
